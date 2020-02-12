@@ -15,6 +15,8 @@ class Node {
 private:
     int value;
     status color;
+    int start;
+    int end;
 public:
     vector<Node*> *linked;
     Node(int value);
@@ -23,6 +25,10 @@ public:
     status getStatus();
     void addNode(Node* node);
     void setStatus(status s);
+    void setStartingTime(int time);
+    void setEndingTime(int time);
+    int getStartingTime();
+    int getEndingTime();
 };
 
 #endif

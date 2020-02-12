@@ -25,3 +25,19 @@ void Node::setStatus(status s){
 status Node::getStatus(){
     return color;
 }
+
+void Node::setStartingTime(int time) {
+    this->start = time;
+}
+
+void Node::setEndingTime(int time) {
+    this->end = time;
+}
+
+int Node::getStartingTime() {
+    return this->start;
+}
+
+int Node::getEndingTime() {
+    return this->end;
+}
