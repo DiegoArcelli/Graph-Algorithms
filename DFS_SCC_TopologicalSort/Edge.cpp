@@ -15,3 +15,11 @@ Edge::~Edge() {
 void Edge::printEdge() {
     cout << "(" << from << ", " << to << ")";
 }
+
+int Edge::getFrom() {
+    return from;
+}
+
+int Edge::getTo() {
+    return to;
+}

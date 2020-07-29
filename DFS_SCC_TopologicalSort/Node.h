@@ -29,6 +29,7 @@ public:
     void setEndingTime(int time);
     int getStartingTime();
     int getEndingTime();
+    void removeNode(int v);
 };
 
 #endif

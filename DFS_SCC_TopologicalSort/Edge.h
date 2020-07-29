@@ -11,6 +11,8 @@ public:
     Edge(int from, int to);
     ~Edge();
     void printEdge();
+    int getFrom();
+    int getTo();
 };
 
 

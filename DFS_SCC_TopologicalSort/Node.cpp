@@ -41,3 +41,20 @@ int Node::getStartingTime() {
 int Node::getEndingTime() {
     return this->end;
 }
+
+
+void Node::removeNode(int v) {
+    vector<Node*>::iterator itr;
+    vector<int> toDelete;
+    int i = 0;
+    for (itr = linked->begin(); itr != linked->end(); ++itr) {
+        if ((*itr)->getValue() == v) {
+            toDelete.push_back(i);
+        }
+        i++;
+    }
+    vector<int>::iterator int_itr;
+    for (int_itr = toDelete.begin(); int_itr != toDelete.end(); ++int_itr) {
+        linked->erase(linked->begin() + *int_itr);
+    }
+}
